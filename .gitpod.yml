@@ -1,13 +1,16 @@
-image: jelaniwoods/appdev2021-omnicalc-1@sha256:073a23dc65a0c65fd4e414a5d73a507445fa9b4e6c6fa9d562f9cf03e8646f90
+image: patrickmckernin/omnicalc1winter22
 
 tasks:
-  - command: bundle install
   - init: bin/setup
 ports:
   - port: 3000
     onOpen: open-preview
+  - port: 9515
+    onOpen: ignore
+
 
 vscode:
   extensions:
-    - shd101wyy.markdown-preview-enhanced
-    - wingrunr21.vscode-ruby
+    - vortizhe.simple-ruby-erb
+    - mbessey.vscode-rufo
+    - aliariff.vscode-erb-beautify

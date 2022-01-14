@@ -48,6 +48,7 @@ group :development do
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
   gem 'htmlbeautifier'
   gem 'rails_db', '2.3.1'
+  gem 'rufo'
 end
 
 group :test do
